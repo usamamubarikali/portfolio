@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+$base-color: #026440;
+$extrasmall: 450px;
+$small: 600px;
+$large: 800px;
+$vlarge: 1000px;
+
+.recentwork__description {
+    height: 60vh;
+    text-align: center;
+    padding: 3rem 2rem;
+    background: $base-color;
+    color: white;
+
+    a {
+        color: ghostwhite;
+        font-weight: 600;
+        font-size: 1.2rem;
+        &:hover {
+            cursor: pointer;
+            color:lightgray;
+        }
+    }
+    h3 {
+        font-family: "Montserrat";
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+    p {
+        font-family: "Montserrat";
+        font-size: 1.2rem;
+        margin: 7px;
+    }
+
+    @media screen and (max-width: $vlarge) {
+        h3 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        a {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media screen and (max-width: $large) {
+        h3 {
+            font-size: 1.6rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        a {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media screen and (max-width: $small) {
+        h3 {
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        a {
+            font-size: 1rem;
+        }
+    }
+}

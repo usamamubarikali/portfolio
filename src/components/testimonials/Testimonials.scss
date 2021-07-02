@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+$base-color: #026440;
+$extrasmall: 450px;
+$small: 600px;
+$large: 800px;
+$vlarge: 1000px;
+
+.slide-container {
+    text-align: center;
+    width: 85%;
+    padding: 1.5rem;
+    h3 {
+        margin-bottom: 0.8rem;
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 2.8rem;
+    }
+    p {
+        font-family: "Montserrat";
+        font-size: 1.6rem;
+        margin: 7px;
+    }
+}
+
+@media screen and (max-width: $vlarge) {
+    .slide-container {
+        width: 90%;
+        h3 {
+            font-size: 2.6rem;
+        }
+        p {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media screen and (max-width: $large) {
+    .slide-container {
+        width: 95%;
+        h3 {
+            font-size: 2.4rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: $small) {
+    .slide-container {
+        width: 98%;
+        h3 {
+            font-size: 1.8rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}

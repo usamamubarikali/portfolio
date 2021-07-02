@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+
+$base-color: #026440;
+$small: 600px;
+$extrasmall: 450px;
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        margin: 1.2rem 1.2rem 1.2rem 2rem;
+    }
+
+    .header__div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__letsconnect {
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        margin: 0.5rem 2rem 0.5rem 0.5rem;
+        padding: 0.5rem 1rem;
+        border: $base-color 2px solid;
+        border-radius: 1.5rem;
+        color: $base-color;
+        text-align: center;
+
+        &:hover {
+            background-color: $base-color;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .header__resume {
+        font-family: "Roboto";
+        font-size: 1.4rem;
+        margin: 0.5rem 1.2rem 0.5rem 0.5rem;
+        color: black;
+
+        &:hover {
+            color: $base-color;
+            cursor: pointer;
+        }
+    }
+}
+
+#nav-icon1 {
+    display: none;
+    width: 60px;
+    height: 45px;
+    position: relative;
+    margin: 1.2rem 1.2rem;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: $base-color;
+    border-radius: 5px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+    top: 18px;
+}
+
+#nav-icon1 span:nth-child(3) {
+    top: 36px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+@media screen and (max-width: $small) {
+    .main__div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 4rem;
+
+        .header__div {
+            display: none;
+        }
+    }
+
+    #nav-icon1 {
+        display: inline-block;
+    }
+
+    .header__div--mobilestyle {
+        transform: translateY(7%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        animation: fadein 0.5s linear;
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-15px);
+            }
+            50% {
+                opacity: 0.7;
+                visibility: visible;
+                transform: translateY(-7px);
+            }
+            100% {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: $extrasmall) {
+    .header__container {
+        margin-right: 2rem;
+
+        .logo {
+            width: 80%;
+        }
+    }
+
+    #nav-icon1 {
+        display: inline-block;
+        width: 15%;
+        height: 45px;
+        position: relative;
+        margin: 1rem 1rem;
+    }
+
+    #nav-icon1 span {
+        height: 3px;
+        background: $base-color;
+        border-radius: 3px;
+    }
+}

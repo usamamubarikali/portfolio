@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+$base-color: #026440;
+$extrasmall: 450px;
+$small: 600px;
+$large: 800px;
+$vlarge: 1000px;
+
+.examples__maindiv {
+    display: flex;
+    margin: -9rem 1rem 0 1rem;
+    z-index: 1;
+    justify-content: center;
+
+    .workexample {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 1.2rem;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        background: white;
+        text-align: center;
+        padding: 1.8rem 0.8rem;
+        margin: 1rem;
+        img {
+            width: 50%;
+            height: 50%;
+        }
+        h2 {
+            font-family: "Montserrat";
+            font-size: 1.8rem;
+            margin-top: 0.7rem;
+        }
+
+        p {
+            font-family: "Montserrat";
+            font-size: 1.2rem;
+        }
+
+        a {
+            font-family: "Montserrat";
+            font-weight: 600;
+            color: $base-color;
+            font-size: 1.4rem;
+            margin: 1.4rem 0;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: $vlarge) {
+    .examples__maindiv {
+        flex-direction: column;
+        .workexample {
+            img {
+                width: 20%;
+                height: 20%;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+    
+            p {
+                font-size: 1.4rem;
+            }
+    
+            a {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $large) {
+    .examples__maindiv {
+        .workexample {
+            img {
+                width: 30%;
+                height: 30%;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+    
+            p {
+                font-size: 1.2rem;
+            }
+    
+            a {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $small) {
+    .examples__maindiv {
+        .workexample {
+            img {
+                width: 40%;
+                height: 40%;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+    
+            p {
+                font-size: 1rem;
+            }
+    
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
