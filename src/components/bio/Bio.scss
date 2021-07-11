@@ -17,16 +17,18 @@ $large: 1000px;
         color: white;
         padding: 4rem 1.8rem 10rem 1.8rem;
         text-align: center;
-        max-width: 60rem;
+        max-width: 75rem;
         h1 {
             font-family: "Montserrat";
             font-size: 2.6rem;
             font-weight: 600;
+            margin-bottom: 0.5rem;
         }
         p {
             font-family: "Montserrat";
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             line-height: 2rem;
+            margin-top: 0;
         }
     }
 
@@ -37,7 +39,7 @@ $large: 1000px;
                 font-weight: 600;
             }
             p {
-                font-size: 1.4rem;
+                font-size: 1.3rem;
                 line-height: 1.8rem;
             }
         }

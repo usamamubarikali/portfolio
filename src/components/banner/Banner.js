@@ -43,7 +43,7 @@ const Banner = () => {
                 />
             <div className="banner__text">
                 <h1 className="banner__h1">Full Stack Web & AWS Developer</h1>
-                <p className="banner__p">I work on Automation and Web Development, and I love doing it.</p>
+                <p className="banner__p">I work on Automation, Web Development and I love Solving Problems.</p>
             </div>
             <Avatar
                 avatarStyle='Transparent'
@@ -53,9 +53,9 @@ const Banner = () => {
                 facialHairType='Blank'
                 clotheType='Hoodie'
                 clotheColor='Heather'
-                eyeType= {scroll < 45 ? 'Happy':'WinkWacky'}
+                eyeType= {scroll < 200 ? 'Happy':'WinkWacky'}
                 eyebrowType='Default'
-                mouthType= {scroll < 45 ? 'Smile':'Tongue'}
+                mouthType= {scroll < 200 ? 'Smile':'Tongue'}
                 skinColor='Tanned'
             />
         </div>

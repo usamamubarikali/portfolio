@@ -1,36 +1,32 @@
 import React from 'react';
-import {ReactComponent as ReactLogo} from "../../static/svgs/cloud_hosting_aodd.svg";
+import { ReactComponent as ReactLogo } from "../../static/svgs/cloud_hosting_aodd.svg";
 
 function AWSSkill() {
     return (
         <div className="my-skill">
             <ReactLogo className="skills-logo" />
-            <h3>
-                Cloud Developer
-            </h3>
-            <p>
-                I like to code things from scratch, and enjoy bringing ideas to life in the browser.
-            </p>
-
             <br />
-            <h4>
-                Languages I speak:
-            </h4>
-            <p>
-                HTML, Pug, Slim, CSS, Sass, Less
-            </p>
-            
-            <br />
-            <h4>
-                Dev Tools:
-            </h4>
+            <div className="text-container">
+                <h3>
+                    Cloud Developer
+                </h3>
+                <p>
+                    I love to create scalable and cost efficient solutions using different AWS services.
+                </p>
 
-            <p>Atom</p>
-            <p>Bootstrap</p>
-            <p>Github</p>
-            <p>Terminal</p>
-            <p>Atom</p>
-            <p>Atom</p>
+                <br />
+                <h4>
+                    Languages I Command in:
+                </h4>
+
+                <p>Lambda</p>
+                <p>Textract</p>
+                <p>S3</p>
+                <p>EC2</p>
+                <p>DynamoDB</p>
+                <p>Rekognition</p>
+                <p>SNS/SQS/SES</p>
+            </div>
         </div>
     )
 }

@@ -9,6 +9,7 @@ $vlarge: 1000px;
 
 .examples__maindiv {
     display: flex;
+    flex-wrap: wrap;
     margin: -9rem 1rem 0 1rem;
     z-index: 1;
     justify-content: center;
@@ -24,6 +25,7 @@ $vlarge: 1000px;
         text-align: center;
         padding: 1.8rem 0.8rem;
         margin: 1rem;
+        flex:  0 30%;
         img {
             width: 50%;
             height: 50%;
@@ -31,21 +33,31 @@ $vlarge: 1000px;
         h2 {
             font-family: "Montserrat";
             font-size: 1.8rem;
-            margin-top: 0.7rem;
+            margin: 0.8rem 0.4rem;
         }
 
         p {
             font-family: "Montserrat";
             font-size: 1.2rem;
+            margin: 0 1.2rem;
+            margin-top: 0.3rem;
+
         }
 
-        a {
-            font-family: "Montserrat";
-            font-weight: 600;
+        a {    
             color: $base-color;
-            font-size: 1.4rem;
-            margin: 1.4rem 0;
             cursor: pointer;
+            text-decoration: underline;
+            margin: 0;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        h4 {
+            font-size: 1.4rem;
+            color: $base-color;
+            margin: 1.2rem 0 0 0;
         }
     }
 }
@@ -54,6 +66,7 @@ $vlarge: 1000px;
     .examples__maindiv {
         flex-direction: column;
         .workexample {
+            width: auto;
             img {
                 width: 20%;
                 height: 20%;

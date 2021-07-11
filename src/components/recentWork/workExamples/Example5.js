@@ -1,31 +1,29 @@
 import React from 'react';
 import "./Examples.scss";
 import companyLogo from '../../../static/images/matrix-logo.jpg';
-const Example1 = () => {
+const Example4 = () => {
     return (
         <div className="workexample">
             {/* <img src={companyLogo} /> */}
             <div>
                 <a href="https://github.com/usamamubarikali/ecommerce" target="_blank">
                     <h2>
-                        E-Commerce
+                        Email Parser
                     </h2>
                 </a>
                 <p>
-                    Implemented user authentication by Two factor authentication 
-                    through  user email or by using Google Auth.
-                    User can Perform CRUD operation in form of REST API for e-commerce products
-                    only if they are authenticated. Frontend is implemented in React.js
+                    Built a Python/Flask app and uploaded to a Hyper V server that 
+                    Automated the process of creating a workspace 
                 </p>
             </div>
             <div>
                 <h4>Technologies Used</h4>
                 <p>
-                    Django, Django Rest Framework, Djoser, Corsheaders
+                    Integromat, AWS Lambda, s3, Python 3.8, boto3
                 </p>
             </div>
         </div>
     )
 }
 
-export default Example1;
+export default Example4;
