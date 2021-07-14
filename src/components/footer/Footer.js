@@ -13,7 +13,7 @@ const Footer = () => {
             <StartProject />
             <div className="footer__innerdiv">
                 <a href="#"><img className="logo" alt="Usama Ali Portfolio" src={signature} /></a>
-                <h5>Living, learning, & leveling up one day at a time.</h5>
+                <h5>Building Amazing Solutions & Strong Relations</h5>
                 <div className="social-links">
                     <a href="https://www.linkedin.com/in/usamaali/" target="_blank"><LinkedIn className="footer__svgs"/></a>
                     <a href="https://github.com/usamamubarikali" target="_blank"><GitHub className="footer__svgs" /></a>

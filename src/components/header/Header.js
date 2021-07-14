@@ -4,8 +4,9 @@ import signature from '../../static/images/signature.png';
 
 const Header = () => {
     const [toggleBurgerMenu, setToggleBurgerMenu] = useState(false);
-
-
+    const downloadFile = () => {
+        window.location.href = "http://usamaali.github.io/src/static/Usama_Ali_Resume.pdf"
+      }
 
     return (
         <div className="main__div">
@@ -17,7 +18,7 @@ const Header = () => {
             <div className="header__container">
                 <img className="logo" alt="Usama Ali Portfolio" src={signature} />
                 <div className={toggleBurgerMenu ? "header__div--mobilestyle" : "header__div"} >
-                    <span className="header__resume">Resume</span>
+                    <span className="header__resume" onClick={downloadFile}>Resume</span>
                     <span className="header__letsconnect">Lets Connect</span>
                 </div>
             </div>
