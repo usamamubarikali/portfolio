@@ -12,10 +12,8 @@ const Example3 = () => {
                     </h2>
                 </a>
                 <p>
-                    Automated the process of document recognition while client uploading the
-                    tax document making the process less prone to errors.
-                    The machine leaning model had the real time response hence
-                    the user is prompted to reupload the correct document.
+                    Automated the process of tax document (1099, W2, Paystubs, 1040) recognition making the screening process less prone to errors.
+                    The Machine Learning model had real time response hence the user is prompted to reupload the correct document.
                 </p>
             </div>
             <div>

@@ -68,6 +68,9 @@ $vlarge: 1000px;
             width: 60%;
             display: flex;
             justify-content: space-evenly;
+            a{
+                cursor: pointer;
+            }
             .footer__svgs {
                 width: 3rem;
                 height: 3rem;

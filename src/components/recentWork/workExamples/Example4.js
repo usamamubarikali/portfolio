@@ -12,14 +12,13 @@ const Example4 = () => {
                     </h2>
                 </a>
                 <p>
-                    Built a Python/Flask app and uploaded to a Hyper V server that 
-                    Automated the process of creating a workspace 
+                   Developed an API which was triggered when a form was filled in Smartsheet. The API automated different tasks which included creating workspaces, duplicating and renaming files and updating sheets according to the conditions. The API is deployed on HYPER-V Server.
                 </p>
             </div>
             <div>
                 <h4>Technologies Used</h4>
                 <p>
-                    Django, Django Rest Framework, Djoser, Corsheaders
+                   Python, Flask, Smartsheet API (Python-SDK), Hyper-V Server 
                 </p>
             </div>
         </div>

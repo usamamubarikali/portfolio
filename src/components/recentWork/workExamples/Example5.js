@@ -12,8 +12,10 @@ const Example4 = () => {
                     </h2>
                 </a>
                 <p>
-                    Built a Python/Flask app and uploaded to a Hyper V server that 
-                    Automated the process of creating a workspace 
+                    Automated the process of extracting useful information 
+                    from emails sent by specific email addresses. 
+                    The data was parsed according to the requirements specified 
+                    and was then cleaned and uploaded to RDS Database. 
                 </p>
             </div>
             <div>

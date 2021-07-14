@@ -53,9 +53,9 @@ const Banner = () => {
                 facialHairType='Blank'
                 clotheType='Hoodie'
                 clotheColor='Heather'
-                eyeType= {scroll < 200 ? 'Happy':'WinkWacky'}
+                eyeType= {scroll < 100 ? 'Happy':'WinkWacky'}
                 eyebrowType='Default'
-                mouthType= {scroll < 200 ? 'Smile':'Tongue'}
+                mouthType= {scroll < 100 ? 'Smile':'Tongue'}
                 skinColor='Tanned'
             />
         </div>
