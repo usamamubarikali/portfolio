@@ -15,8 +15,8 @@ const RecentWork = ({ setToggleContactMe }) => {
                         and Full Stack Development.My soft skills have also enhanced which
                         include communication, presentation and documentation.
                         I look forward to adding new and cooler projects to my portfolio with your
-                        help! Want to see more? <h5 onClick={()=>setToggleContactMe(true)}>Contact me.</h5>
-                    </p>
+                        help! Want to see more?
+                    </p><h5 onClick={()=>setToggleContactMe(true)}>Contact me.</h5>
                 </div>
             </div>
             <Examples />

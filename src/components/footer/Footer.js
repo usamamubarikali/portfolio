@@ -12,7 +12,7 @@ const Footer = ({ setToggleContactMe }) => {
         <div className="footer__maindiv">
             <StartProject setToggleContactMe={setToggleContactMe} />
             <div className="footer__innerdiv">
-                <a href="#"><img className="logo" alt="Usama Ali Portfolio" src={signature} /></a>
+                <a href=""><img className="logo" alt="Usama Ali Portfolio" src={signature} /></a>
                 <h5>Building Amazing Solutions & Strong Relations</h5>
                 <div className="social-links">
                     <a href="https://www.linkedin.com/in/usamaali/" target="_blank"><LinkedIn className="footer__svgs" /></a>
