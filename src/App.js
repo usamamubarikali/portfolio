@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.scss';
 import Header from './components/header/Header';
 import Banner from './components/banner/Banner';
@@ -6,18 +7,22 @@ import Skills from './components/skills/Skills';
 import RecentWork from './components/recentWork/RecentWork';
 import Testimonials from './components/testimonials/Testimonials';
 import Footer from './components/footer/Footer';
+import ContactMe from './components/contactMe/ContactMe';
 function App() {
+  const [toggleContactMe, setToggleContactMe] = useState(false);
   return (
     <div className="App">
-      <Header />
+
+      <ContactMe toggleContactMe={toggleContactMe} setToggleContactMe={setToggleContactMe} />
+      <Header setToggleContactMe={setToggleContactMe} />
       <Banner />
       <Bio />
       <Skills />
-      <RecentWork />
+      <RecentWork setToggleContactMe={setToggleContactMe} />
       <div className="testimonials">
         <Testimonials />
       </div>
-      <Footer />
+      <Footer setToggleContactMe={setToggleContactMe} />
     </div>
   );
 }

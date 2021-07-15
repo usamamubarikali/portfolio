@@ -2,7 +2,7 @@ import React from 'react';
 import './RecentWork.scss';
 import Examples from './workExamples/Examples';
 
-const RecentWork = () => {
+const RecentWork = ({ setToggleContactMe }) => {
     return (
         <div className="recentwork__maindiv">
             <div className="recentwork__innerdiv">
@@ -15,7 +15,7 @@ const RecentWork = () => {
                         and Full Stack Development.My soft skills have also enhanced which
                         include communication, presentation and documentation.
                         I look forward to adding new and cooler projects to my portfolio with your
-                        help! Want to see more? <a>Contact me.</a>
+                        help! Want to see more? <h5 onClick={()=>setToggleContactMe(true)}>Contact me.</h5>
                     </p>
                 </div>
             </div>

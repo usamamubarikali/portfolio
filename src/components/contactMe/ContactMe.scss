@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+$base-color: #026440;
+$extrasmall: 450px;
+$small: 600px;
+$large: 1000px;
+
+.display-none {
+    display: none;
+}
+.contactme__maindiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .backdrop-open {
+        display: flex;
+        animation: fadein 500ms linear;
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
+    .backdrop-close {  
+        animation: fadeout 500ms linear;
+        @keyframes fadeout {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+
+    .backdrop {
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .open {
+        display: flex !important;
+        opacity: 1 !important;
+        animation: slidein 500ms ease-out;
+        @keyframes slidein {
+            0% {
+                opacity: 0.5;
+                transform: translateY(120%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+    .close {
+        -prefix-animation: slideout 500ms ease-out;
+        @keyframes slideout {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(130%);
+            }
+        }
+    }
+
+    .contactme__form {
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 11;
+        background: snow;
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 1.2rem;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        max-width: 26rem;
+        top: 3rem;
+        // transition: opacity 200ms ease-out, transform 500ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        .signatures {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            img {
+                width: 10rem;
+                height: auto;
+                align-self: flex-start;
+                justify-self: flex-start;
+                margin: 1.2rem 0;
+            }
+        }
+
+        .border-line {
+            border: 0.1px solid lightgray;
+            color: lightgray;
+            background: lightgray;
+            margin: 0 1rem;
+            width: 100%;
+        }
+
+        h5 {
+            margin: 1rem 0 0 0;
+            width: 95%;
+            font-size: 1.2rem;
+        }
+        .field {
+            margin: 1.2rem;
+        }
+
+        label {
+            color: $base-color;
+            font-family: Montserrat;
+            font-weight: 300;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+
+        textarea {
+            font-size: 1.2rem;
+            font-weight: 300;
+            border-radius: 0.3rem;
+            width: 100%;
+            min-width: 100%;
+            min-height: 4rem;
+            border: 2px solid $base-color;
+            margin-top: 0.3rem;
+            outline: none;
+            &:hover,
+            &:focus {
+                border: 3px solid $base-color;
+            }
+        }
+
+        input {
+            font-size: 1.2rem;
+            font-weight: 300;
+            border-radius: 0.5rem;
+            width: 100%;
+            min-height: 3rem;
+            border: 2px solid $base-color;
+            margin-top: 0.2rem;
+            outline: none;
+            &:hover,
+            &:focus {
+                border: 3px solid $base-color;
+            }
+        }
+
+        #button {
+            width: 10rem;
+            position: relative;
+            left: 30%;
+            border-radius: 3rem;
+            background-color: white;
+            color: $base-color;
+            cursor: pointer;
+            &:hover {
+                color: white;
+                background: $base-color;
+            }
+        }
+    }
+}

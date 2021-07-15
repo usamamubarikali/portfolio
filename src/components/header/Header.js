@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import './Header.scss';
 import signature from '../../static/images/signature.png';
 
-const Header = () => {
+const Header = ({ setToggleContactMe }) => {
     const [toggleBurgerMenu, setToggleBurgerMenu] = useState(false);
+
     const downloadFile = () => {
-        window.location.href = "http://usamaali.github.io/src/static/Usama_Ali_Resume.pdf"
-      }
+        window.open("http://usamamubarikali.github.io/portfolio/Usama_Ali_Resume.pdf", '_blank').focus();
+    }
 
     return (
         <div className="main__div">
@@ -19,7 +20,7 @@ const Header = () => {
                 <img className="logo" alt="Usama Ali Portfolio" src={signature} />
                 <div className={toggleBurgerMenu ? "header__div--mobilestyle" : "header__div"} >
                     <span className="header__resume" onClick={downloadFile}>Resume</span>
-                    <span className="header__letsconnect">Lets Connect</span>
+                    <span className="header__letsconnect" onClick={() => setToggleContactMe(true)}>Lets Connect</span>
                 </div>
             </div>
         </div>
