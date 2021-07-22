@@ -47,17 +47,17 @@ const ContactMeForm = ({ toggleContactMe }) => {
                             <form id="form" onSubmit={sendEmail}>
                                 <div className="field">
                                     <label htmlFor="from_name">Full Name</label>
-                                    <input type="text" name="from_name" id="from_name" />
+                                    <input type="text" name="from_name" id="from_name" required/>
                                 </div>
 
                                 <div className="field">
                                     <label htmlFor="reply_to">Email Address</label>
-                                    <input type="email" name="reply_to" id="reply_to" />
+                                    <input type="email" name="reply_to" id="reply_to" required/>
                                 </div>
 
                                 <div className="field">
                                     <label htmlFor="message">Message</label>
-                                    <textarea type="textarea" name="message" id="message" rows="4" cols="25" wrap="hard" />
+                                    <textarea type="textarea" name="message" id="message" rows="4" cols="25" wrap="hard" required/>
                                 </div>
 
                                 <input type="text" name="to_name" id="to_name" defaultValue="Usama Ali" hidden />
